@@ -85,7 +85,8 @@
         ],
         "post-update-cmd": [
             "@auto-scripts"
-        ]
+        ],
+        "start": "npm run start & symfony server:start"
     },
     "conflict": {
         "symfony/symfony": "*"

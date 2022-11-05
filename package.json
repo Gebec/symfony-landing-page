@@ -1,0 +1,27 @@
+{
+  "name": "symfony_landing_page",
+  "version": "1.0.0",
+  "description": "",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel watch assets/scss/index.scss --public-url /assets/ --dist-dir public/assets"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gebec/symfony-landing-page.git"
+  },
+  "author": "Gebec <gebec.m@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gebec/symfony-landing-page/issues"
+  },
+  "homepage": "https://github.com/Gebec/symfony-landing-page#readme",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0"
+  }
+}
