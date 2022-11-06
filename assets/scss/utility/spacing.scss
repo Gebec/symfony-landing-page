@@ -1,0 +1,35 @@
+@use '../variables.scss' as *;
+
+@mixin createSpacing($spacing, $type, $name) {
+    &-#{$name} {
+        #{$type}: $spacing;
+    }
+
+    &t-#{$name} {
+        #{$type}-top: $spacing !important;
+    }
+
+    &r-#{$name} {
+        #{$type}-right: $spacing !important;
+    }
+
+    &b-#{$name} {
+        #{$type}-bottom: $spacing !important;
+    }
+
+    &l-#{$name} {
+        #{$type}-left: $spacing !important;
+    }
+}
+
+.p {
+    @include createSpacing($spacing-16, 'padding', '16');
+    @include createSpacing($spacing-32, 'padding', '32');
+    @include createSpacing($spacing-48, 'padding', '48');
+}
+
+.m {
+    @include createSpacing($spacing-16, 'margin', '16');
+    @include createSpacing($spacing-16, 'margin', '16');
+    @include createSpacing($spacing-16, 'margin', '16');
+}
