@@ -11,7 +11,7 @@ class HomepageController extends AbstractController
     #[Route('/', name: 'homepage')]
     public function index(): Response
     {
-        return $this->render('homepage/index.html.twig', [
+        return $this->render('pages/homepage/homepage.html.twig', [
                 'controller_name' => 'HomepageController',
                 'pageTitle' => 'Symfony landing page'
             ]);
