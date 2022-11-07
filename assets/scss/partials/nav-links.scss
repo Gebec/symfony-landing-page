@@ -1,0 +1,31 @@
+@use "../variables.scss" as *;
+
+.navigation {
+    &__item {
+        text-transform: uppercase;
+        font-size: $font-size-20;
+
+        list-style-type: none;
+
+        padding-bottom: $spacing-4;
+        border-bottom: 2px solid transparent;
+
+        & > a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.5s;
+        }
+
+        &:hover,
+        &:active {
+            & > a {
+                color: $color-secondary;
+                transition: color 0.25s;
+            }
+        }
+
+        &--active {
+            border-bottom: 2px solid $color-secondary;
+        }
+    }
+}

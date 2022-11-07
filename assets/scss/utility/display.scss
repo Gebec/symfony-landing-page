@@ -1,0 +1,21 @@
+@use "../variables.scss" as *;
+
+.d-mobile {
+    display: block;
+
+    @media (min-width: $breakpoint) {
+        display: none;
+    }
+}
+
+.d-desktop {
+    display: none;
+
+    @media (min-width: $breakpoint) {
+        display: block;
+    }
+}
+
+.d-inline-block {
+    display: inline-block;
+}

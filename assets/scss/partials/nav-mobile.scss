@@ -1,0 +1,55 @@
+@use "../variables.scss" as *;
+
+.nav-mobile {
+    overflow: hidden;
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: $spacing-16;
+    }
+
+    #nav-mobile__toggle {
+        display: none;
+    }
+
+    #nav-mobile__toggle ~ nav {
+        max-height: 0;
+
+        transition: max-height 0.15s;
+    }
+
+    #nav-mobile__toggle:checked ~ nav {
+        max-height: 500px;
+        padding: $spacing-16;
+
+        transition: max-height 0.25s;
+    }
+
+    &__icon {
+        display: inline-block;
+        cursor: pointer;
+
+        & > svg {
+            fill: white;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+
+    #nav-mobile__toggle ~ label > .nav-mobile__icon--opened {
+        display: none;
+    }
+
+    #nav-mobile__toggle:checked ~ label > .nav-mobile__icon--opened {
+        display: block;
+    }
+
+    #nav-mobile__toggle ~ label > .nav-mobile__icon--closed {
+        display: block;
+    }
+    #nav-mobile__toggle:checked ~ label > .nav-mobile__icon--closed {
+        display: none;
+    }
+}

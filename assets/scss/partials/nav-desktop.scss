@@ -1,0 +1,9 @@
+@use "../variables.scss" as *;
+
+.nav-desktop {
+    .navigation {
+        display: flex;
+        justify-content: flex-end;
+        gap: $spacing-32;
+    }
+}

@@ -1,17 +1,11 @@
 {% set route_name = app.request.attributes.get('_route') %}
 
 <header class="header">
-    <nav class="container">
-        <ul class="nav p-32">
-            <li {% if route_name == 'homepage' %} class="nav__item nav__item--active" {% else %} class="nav__item" {% endif %} >
-                <a class="nav-link" href="{{ path('homepage') }}">Home</a>
-            </li>
-            <li {% if route_name == 'about' %} class="nav__item nav__item--active" {% else %} class="nav__item" {% endif %} >
-                <a class="nav-link" href="{{ path('about') }}">About me</a>
-            </li>
-            <li {% if route_name == 'work' %} class="nav__item nav__item--active" {% else %} class="nav__item" {% endif %} >
-                <a class="nav-link" href="{{ path('work') }}">My work</a>
-            </li>
-        </ul>
+        <div class="container d-desktop">
+            {% include 'partials/nav-desktop.html.twig' %}
+        </div>
+        <div class="container d-mobile">
+            {% include 'partials/nav-mobile.html.twig' %}
+        </div>
     </nav>
 </header>
