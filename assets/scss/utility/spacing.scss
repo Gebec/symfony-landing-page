@@ -1,4 +1,4 @@
-@use '../variables.scss' as *;
+@use "../variables.scss" as *;
 
 @mixin createSpacing($spacing, $type, $name) {
     &-#{$name} {
@@ -23,13 +23,15 @@
 }
 
 .p {
-    @include createSpacing($spacing-16, 'padding', '16');
-    @include createSpacing($spacing-32, 'padding', '32');
-    @include createSpacing($spacing-48, 'padding', '48');
+    @include createSpacing($spacing-8, "padding", "8");
+    @include createSpacing($spacing-16, "padding", "16");
+    @include createSpacing($spacing-32, "padding", "32");
+    @include createSpacing($spacing-48, "padding", "48");
 }
 
 .m {
-    @include createSpacing($spacing-16, 'margin', '16');
-    @include createSpacing($spacing-16, 'margin', '16');
-    @include createSpacing($spacing-16, 'margin', '16');
+    @include createSpacing($spacing-8, "margin", "8");
+    @include createSpacing($spacing-16, "margin", "16");
+    @include createSpacing($spacing-16, "margin", "16");
+    @include createSpacing($spacing-16, "margin", "16");
 }

@@ -1,0 +1,21 @@
+@use "../variables.scss" as *;
+
+.button {
+    all: unset;
+
+    display: inline-block;
+    cursor: pointer;
+
+    text-transform: uppercase;
+
+    &--secondary {
+        background-color: $color-secondary;
+        transition: background-color 0.5s;
+
+        &:hover,
+        &:active {
+            background-color: $color-secondary-dark;
+            transition: background-color 0.25s;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@use "../variables.scss" as *;
+
+.introduction {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10vw;
+
+    &__text {
+        flex: 2;
+        min-width: 15rem;
+
+        & > * + * {
+            margin-top: $spacing-48;
+        }
+    }
+
+    &__image {
+        flex: 1;
+        max-width: 100%;
+        min-width: 15rem;
+    }
+}

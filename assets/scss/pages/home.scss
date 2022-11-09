@@ -1,0 +1,8 @@
+@use "../variables.scss" as *;
+
+.page-home {
+    & > * {
+        margin-top: $spacing-160;
+        margin-bottom: $spacing-160;
+    }
+}
