@@ -7,8 +7,9 @@
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "watch:styles": "parcel watch assets/scss/index.scss --public-url /assets/ --dist-dir public/assets",
-        "watch:images": "parcel watch 'assets/images/*.(jpg|jpeg|png)' --public-url /assets/ --dist-dir public/assets/images"
+        "watch:styles": "parcel watch assets/scss/index.scss --dist-dir public/assets",
+        "watch:images": "parcel watch 'assets/images/*.(jpg|jpeg|png)' --dist-dir public/assets/images",
+        "build:production": "rm -rf public/assets && parcel build assets/scss/index.scss --public-url /assets/ --dist-dir public/assets --no-source-maps; parcel build 'assets/images/*.(jpg|jpeg|png)' --public-url /assets/ --dist-dir public/assets/images"
     },
     "repository": {
         "type": "git",

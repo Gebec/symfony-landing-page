@@ -86,7 +86,9 @@
         "post-update-cmd": [
             "@auto-scripts"
         ],
-        "start": "npm run watch:images & npm run watch:styles & symfony serve"
+        "dev": "npm run watch:images & npm run watch:styles & symfony serve",
+        "prod": "npm run build:production & symfony serve",
+        "build": "npm run build:production"
     },
     "conflict": {
         "symfony/symfony": "*"
