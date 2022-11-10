@@ -4,7 +4,7 @@ This project is meant as a showcase project. The main purpose is to build a simp
 
 ## Getting started
 
-These instruction will get you copy of the project up and running on your local machine for developing and testing purposes.
+These instructions will get you a copy of the project up and running on your local machine for developing and testing purposes.
 
 ### Symfony framework
 
@@ -20,6 +20,12 @@ Make sure you have the following packages installed locally:
 -   [Composer](https://getcomposer.org/) (>= 2.0)
 
 ### Installation
+
+Create .env file and fill secrets accordingly
+
+```sh
+cp .env.sample .env
+```
 
 Install composer dependencies
 
