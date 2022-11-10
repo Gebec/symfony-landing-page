@@ -9,17 +9,17 @@ class MyWork
         return array(
             array(
                 'title' => 'Epic project',
-                'description' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+                'description' => 'There is no theory of evolution. Just a list of animals Chuck Norris allows to live',
                 'imagePath' => 'assets/images/project.png'
             ),
             array(
                 'title' => 'Another work I did',
-                'description' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+                'description' => "What was going through the minds of all of Chuck Norris' victims before they died? His shoe.",
                 'imagePath' => 'assets/images/another_work.png'
             ),
             array(
                 'title' => 'Rebrand of this company',
-                'description' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+                'description' => 'Chuck Norris can win a game of Connect Four in only three moves',
                 'imagePath' => 'assets/images/rebrand.png'
             )
         );

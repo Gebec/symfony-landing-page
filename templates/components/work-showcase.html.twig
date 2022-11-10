@@ -1,0 +1,14 @@
+<section class="work">
+    {% for item in data %}
+        <a href="{{ path('work') }}" class="work__item">
+            <div class="work__image-wrapper">
+                <div class="work__image" style="background-image: url({{ item.imagePath }});"></div>
+                <div class="work__image-decor"></div>
+            </div>
+            <div class="work__text">
+                <h2 class="h2 t-upper">{{ item.title}}</h2>
+                <p>{{ item.description }}</p>
+            </div>
+        </a>
+    {% endfor %}
+</section>
