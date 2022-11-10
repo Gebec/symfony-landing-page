@@ -1,11 +1,11 @@
 <ul class="navigation">
     <li {% if route_name == 'homepage' %} class="navigation__item navigation__item--active" {% else %} class="navigation__item" {% endif %} >
-        <a class="navigation__link fw-thin" href="{{ path('homepage') }}">Home</a>
+        <a class="navigation__link t-thin" href="{{ path('homepage') }}">Home</a>
     </li>
     <li {% if route_name == 'about' %} class="navigation__item navigation__item--active" {% else %} class="navigation__item" {% endif %} >
-        <a class="navigation__link fw-thin" href="{{ path('about') }}">About me</a>
+        <a class="navigation__link t-thin" href="{{ path('about') }}">About me</a>
     </li>
     <li {% if route_name == 'work' %} class="navigation__item navigation__item--active" {% else %} class="navigation__item" {% endif %} >
-        <a class="navigation__link fw-thin" href="{{ path('work') }}">My work</a>
+        <a class="navigation__link t-thin" href="{{ path('work') }}">My work</a>
     </li>
 </ul>
